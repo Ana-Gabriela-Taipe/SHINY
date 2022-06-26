@@ -1,0 +1,75 @@
+---
+title: "Introduccion a Shiny Apps"
+author: "Ana Gabriela Taipe"
+date: "11/1/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### ¿Qué es un shiny app?
+
+Es una página web (UI) conectada a una computadora corriendo una sesión de R (el server).
+
+La idea es que el usuario pueda manipular lo que nosotros le permitamos en el UI, y luego que el server tome esos imput del usuario, actualice el código y actualice la interfaz. 
+
+
+![](shiny-apps-slides-figure/ui-server.png)
+
+
+**Archivos de UI y Server**
+
+Los shiny apps están conformados por dos archivos, el UI y el Server.
+
+![](shiny-apps-slides-figure/ui-server-files.png)
+
+**Estructura de archivos**
+
+![](shiny-apps-slides-figure/file-structure.png)
+
+### Tipos de inputs
+
+**(1/2)**
+
+![](shiny-apps-slides-figure/inputs1.png)
+
+**(2/2)**
+
+![](shiny-apps-slides-figure/inputs2.png)
+
+
+### Layouts
+
+**fluidRow()**
+
+![](shiny-apps-slides-figure/layout1.png)
+
+**flowLayout()**
+
+![](shiny-apps-slides-figure/layout2.png)
+
+**splitLayout() y verticalLayout()**
+
+![](shiny-apps-slides-figure/layout3.png)
+
+### Navegacion 
+
+![](shiny-apps-slides-figure/nav1.png)
+
+### HTML
+
+**(1/2)**
+
+![](shiny-apps-slides-figure/html1.png)
+
+**(2/2) otras funciones de HTML**
+
+![](shiny-apps-slides-figure/html2.png)
+\newpage
+### Ejemplo
+
+![](shiny-apps-slides-figure/server-ui-files-parts.png)
+
+![](shiny-apps-slides-figure/render.png)
